@@ -1,0 +1,138 @@
+x<-9
+y<-10
+z<-y<x
+z
+yy=TRUE
+zz=FALSE
+yy&zz
+yy|zz
+!yy
+
+# VECTORS
+apple<-c('green','red','gold')
+print(apple)
+class(apple)
+vector=c(24,23,22,'343',32L)
+print(vector)
+class(vector)
+
+#sequence
+seq<-1:20
+cat(seq)
+seq(from=1,to=20,by=2)
+seq
+
+vector=c("bASHA","JABBAR")
+names(vector)=c("1","2")
+vector[1]
+
+#repeat 
+vector=c("hello","loops")
+i<-1
+repeat{
+  print(vector)
+  i<-i+1
+  if(i>5){
+    break
+  }
+}
+
+😁out puts:
+> x<-9
+> y<-10
+> z<-y<x
+> cat(z)
+FALSE
+> x<-9
+> y<-10
+> z<-y<x
+> print(z)
+[1] FALSE
+> 
+> x<-9
+> y<-10
+> z<-y<x
+> z
+[1] FALSE
+> 
+> y="TRUE"
+> z="FALSE"
+> y&z
+Error in y & z : 
+  operations are possible only for numeric, logical or complex types
+> yy="TRUE"
+> zz="FALSE"
+> yy&zz
+Error in yy & zz : 
+  operations are possible only for numeric, logical or complex types
+> yy=TRUE
+> zz=FALSE
+> yy&zz
+[1] FALSE
+> yy|zz
+[1] TRUE
+> !yy
+[1] FALSE
+> # VECTORS
+> apple<-('green','red','gold')
+Error: unexpected ',' in "apple<-('green',"
+> # VECTORS
+> apple<-c('green','red','gold')
+> print(apple)
+[1] "green" "red"   "gold" 
+> class(apple)
+[1] "character"
+> vector=c(24,23,22,'343',32L)
+> print(vector)
+[1] "24"  "23"  "22"  "343" "32" 
+> class(vector)
+[1] "character"
+> #sequence
+> seq<-1:17
+> cat(seq)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
+> #sequence
+> seq<-1:20
+> cat(seq)
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+> seq(1:20,by=2)
+Error in seq.default(1:20, by = 2) : 'from' must be of length 1
+> seq
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20
+> seq(from=1,to=20,by=2)
+ [1]  1  3  5  7  9 11 13 15 17 19
+> vector=c("bASHA","JABBAR")
+> name(vector)=c("1","2")
+Error in name(vector) = c("1", "2") : could not find function "name<-"
+> names(vector)=c("1","2")
+> vector[1]
+      1 
+"bASHA" 
+> #repeat 
+> vector=c("hello","loops")
+> i<-1
+> repeat{
++   print(vector)
++   i<-i+1
++   if(i<5){
++     break
++   }
++ }
+[1] "hello" "loops"
+> 
+> #repeat 
+> vector=c("hello","loops")
+> i<-1
+> repeat{
++   print(vector)
++   i<-i+1
++   if(i>5){
++     break
++   }
++ }
+[1] "hello" "loops"
+[1] "hello" "loops"
+[1] "hello" "loops"
+[1] "hello" "loops"
+[1] "hello" "loops"
+
