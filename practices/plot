@@ -1,0 +1,6 @@
+plot( x=1,xlab="x aixis",
+     ylab="yaxis",
+     xlim=c(0,10),
+     ylim=c(0,10),
+     y=8,
+     main="the graph of the x and y")
