@@ -1,0 +1,24 @@
+3.  Write a R program to create a sequence of
+numbers from 20 to 50 and find the mean of numbers from 20 to 60 and sum of
+numbers from 51 to 91
+
+R-PROGRAMING:
+
+sequence_20_to_50 <- 20:500
+mean_20_to_60 <- mean(20:60)
+sum_51_to_91 <- sum(51:91)
+cat("Sequence of numbers from 20 to 50:", sequence_20_to_50, "\n")
+cat("Mean of numbers from 20 to 60:", mean_20_to_60, "\n")
+cat("Sum of numbers from 51 to 91:", sum_51_to_91, "\n")
+
+OUTPUT:
+
+> sequence_20_to_50 <- 20:50
+> mean_20_to_60 <- mean(20:60)
+> sum_51_to_91 <- sum(51:91)
+> cat("Sequence of numbers from 20 to 50:", sequence_20_to_50, "\n")
+Sequence of numbers from 20 to 50: 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 
+> cat("Mean of numbers from 20 to 60:", mean_20_to_60, "\n")
+Mean of numbers from 20 to 60: 40 
+> cat("Sum of numbers from 51 to 91:", sum_51_to_91, "\n")
+Sum of numbers from 51 to 91: 2911 
