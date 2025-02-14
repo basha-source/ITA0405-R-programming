@@ -1,0 +1,31 @@
+5. Write a R program to get the first 10
+Fibonacci numbers.
+
+R-PROGRMMING:
+
+fibonacci_numbers <- function(n) {
+  fib_seq <- numeric(n)  
+  fib_seq[1] <- 0      
+  fib_seq[2] <- 1      
+    for (i in 3:n) {
+    fib_seq[i] <- fib_seq[i-1] + fib_seq[i-2]
+  }
+  return(fib_seq)
+}
+first_10_fibonacci <- fibonacci_numbers(10)
+cat("The first 10 Fibonacci numbers are:", first_10_fibonacci, "\n")
+
+OUTPUT:
+
+> fibonacci_numbers <- function(n) {
++   fib_seq <- numeric(n)  
++   fib_seq[1] <- 0      
++   fib_seq[2] <- 1      
++   for (i in 3:n) {
++     fib_se .... [TRUNCATED] 
+
+> first_10_fibonacci <- fibonacci_numbers(10)
+
+> cat("The first 10 Fibonacci numbers are:", first_10_fibonacci, "\n")
+The first 10 Fibonacci numbers are: 0 1 1 2 3 5 8 13 21 34 
+> 
