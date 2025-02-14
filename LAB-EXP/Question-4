@@ -1,0 +1,12 @@
+4. Write a R program to create a vector which
+contains 10 random integer values between -50 and +50.
+
+R-PROGRAMMING:
+
+random_integers <- sample(-50:50, 10, replace = TRUE)
+cat("Random integer values between -50 and +50:", random_integers, "\n")
+
+OUTPUT:
+
+> cat("Random integer values between -50 and +50:", random_integers, "\n")
+Random integer values between -50 and +50: -15 -35 -28 14 -44 -3 19 -27 -49 -4 
