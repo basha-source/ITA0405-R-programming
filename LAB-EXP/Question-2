@@ -1,0 +1,64 @@
+2. Write a R program to get the details of the
+objects in memory
+
+
+R-PROGRAMMING:
+
+x <- 1:1000
+y <- matrix(1:100, nrow = 10)
+z <- "Hello, R!"
+objects_in_memory <- ls()
+cat("Details of objects in memory:\n")
+for (obj in objects_in_memory) {
+  size <- object.size(get(obj))
+  cat("Object:", obj, "- Size:", format(size, units = "auto"), "\n")
+}
+
+OUTPUT:
+
+Object: a - Size: 56 bytes 
+Object: a1 - Size: 352 bytes 
+Object: age - Size: 112 bytes 
+Object: apple - Size: 248 bytes 
+Object: average_scores - Size: 80 bytes 
+Object: b - Size: 56 bytes 
+Object: car - Size: 86.8 Kb 
+Object: char - Size: 112 bytes 
+Object: char1 - Size: 120 bytes 
+Object: df1 - Size: 1.2 Kb 
+Object: df2 - Size: 1.5 Kb 
+Object: english_scores - Size: 80 bytes 
+Object: i - Size: 56 bytes 
+Object: list1 - Size: 472 bytes 
+Object: list2 - Size: 944 bytes 
+Object: logic - Size: 56 bytes 
+Object: logic2 - Size: 56 bytes 
+Object: logic3 - Size: 56 bytes 
+Object: mat - Size: 248 bytes 
+Object: math_scores - Size: 80 bytes 
+Object: name - Size: 112 bytes 
+Object: new - Size: 5 Kb 
+Object: num - Size: 56 bytes 
+Object: num1 - Size: 56 bytes 
+Object: obj - Size: 112 bytes 
+Object: objects_in_memory - Size: 2.9 Kb 
+Object: science_scores - Size: 80 bytes 
+Object: seq - Size: 176 bytes 
+Object: size - Size: 288 bytes 
+Object: string - Size: 136 bytes 
+Object: student_scores - Size: 792 bytes 
+Object: var_x - Size: 56 bytes 
+Object: variable - Size: 112 bytes 
+Object: varx - Size: 56 bytes 
+Object: vec1 - Size: 96 bytes 
+Object: vector - Size: 176 bytes 
+Object: vehicle - Size: 86.7 Kb 
+Object: vlog - Size: 64 bytes 
+Object: vnum - Size: 80 bytes 
+Object: vstrc - Size: 248 bytes 
+Object: x - Size: 96 bytes 
+Object: y - Size: 616 bytes 
+Object: yy - Size: 56 bytes 
+Object: z - Size: 120 bytes 
+Object: zz - Size: 56 bytes 
+> 
